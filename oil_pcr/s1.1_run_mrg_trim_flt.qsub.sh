@@ -19,11 +19,11 @@
     # cutadapt-3.4
 #####
 # To run:
-# 1) change the workdir to your working directory
-# 2) prepare a list of files, removing the R1.fastq or R2.fastq suffix and add the location to LIST
-# 3) Adjust the merge variables for your specific construct length. PCTID is the most important
-# 4) Add the target primer sequence to the cutadapt variables and adjust the cutadapt call for the numebr of multiplexed targets
-# 5) adjusted max error if desired. Currently set very low for stringent filtering
+# 1) change the workdir on line 31 to your working directory
+# 2) prepare a list of samples removing the R1.fastq or R2.fastq suffix and add the path to LIST on line 35
+# 3) Adjust the merge variables for your specific construct length starting on line 38. PCTID is the most important
+# 4) Add the target primer sequence to the cutadapt variables starting on line 49 and adjust the cutadapt call for the number of multiplexed targets
+# 5) adjusted max error for quality filtering on line 57 if desired. Currently set very low for stringent filtering
 
 #export usearch
 export PATH=/programs/usearch11.0.667:$PATH
