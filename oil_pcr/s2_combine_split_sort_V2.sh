@@ -13,14 +13,15 @@
     # cutadapt-3.4
 #####
 # to run:
-# 1) change the working directory WRK
-# 2) make sure 'QFILTER_IN' is the directory of the output from s1.1_run_mrg_trim_flt.qsub.sh
-# 3) Change the sequences in the cutadapt variables
-    # a) the target sequences will be the rev-comp full fusion primer
-    # b) the ribo sequence will be the 519F sequence (shoudn't have to change)
-# 4) adjust the target lengths. This will be the length of the target sequence without the primers
-# 5) chagne the number of times cutadapt runs for the number of targets    
-
+# 1) change the working directory WRK on line 26
+# 2) make sure 'QFILTER_IN' on line 28 is the directory of the output from s1.1_run_mrg_trim_flt.qsub.sh
+# 3) Change the TARGET variables
+    # a) set the TARGET name variables for each target on line 42 (add or delete targets as necessary)
+    # b) set the target fusion variables for each target on line 46 (the reverse compliment of each fusion primer)
+    # c) the ribo sequence will be the 519F sequence (shoudn't have to change)
+    # d) adjust the target lenths on line 55. This will be the length of the target sequence without the primers
+# 4) add or delete cutadapt calls on line 61 for each target (the only difference is the target number)
+# 5) cadd or delete fasx_unique calls on line 83 for the number of targets  
 
 WRK=/workdir/users/pd378/oil_international/sequence_processing/commensal_oil_run1.0
 
