@@ -10,7 +10,7 @@
     # mothur
 #####
 # to run:
-# 1) change the working directory WRK
+# 1) change the working directory WRK on line 16
 # 2) make sure that UNIQ_READS is the directory of the output from s2_combine_split_sort_V2.sh
 
 WRK=/workdir/users/pd378/oil_international/sequence_processing/commensal_oil_run1.0
